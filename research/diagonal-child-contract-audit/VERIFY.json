@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/community-frontier1094-audit/selected-replay.tar.gz",
+    "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-global/vendor531/vendor/clifford/clifford_exact.py",
+    "research/e8-lemma-g-lean/LemmaG/Stream.lean",
+    "research/e8-lemma-g-lean/PROOF.md",
+    "research/selector-batching/README.md",
+    "research/selector-batching/NOTICE.md",
+    "research/selector-batching/CERTIFICATE.json"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Exact selected recipe columns, source binding and direct-sum counterexample."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/oracle.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Separate inverse-support and exact rational matrix oracle; positive escapes and permutations."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_contract.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Positive replay, six certificate corruptions in both engines, semantic mutants, source corruption and read-only relocation."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "task_id": "supplier-boundary-audit",
+  "priority_revision": 3,
+  "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+  "original_card": {
+    "id": "supplier-boundary-audit",
+    "question": "Does one selected supplier obligation follow from its actual source-bound checks?",
+    "starting_points": [
+      "certificates/selected-result.json",
+      "research/owner-boundary-audit/README.md"
+    ],
+    "methods": [
+      "Trace one hypothesis through the source, checker and complete caller.",
+      "Construct one semantically invalid but superficially well-formed fixture and test rejection."
+    ],
+    "acceptance_gate": "Pin the current sources and one obligation; the historical owner audit is an example, not evidence of a current bug.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "research/owner-boundary-audit/verify.py"
+      ],
+      "expected": "PASS_PR626_NEXT_TOUCH_BOUNDARY_AUDIT",
+      "inspect": "Identify why the timing-only omission passes but the full production controller still rejects it.",
+      "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "Choose one current supplier obligation and trace whether its acceptance depends on an independent check.",
+    "bottleneck_link": "Closing a current acceptance gap or proof obligation strengthens reliability even without changing kappa.",
+    "allowed_variations": [
+      "Audit one named current condition using a new semantic counterexample."
+    ],
+    "scope_change_triggers": [
+      "Reporting the historical timing-only diagnostic as a new current acceptance bug."
+    ],
+    "overlap_terms": [
+      "owner boundary",
+      "bridge omission",
+      "hosting"
+    ]
+  },
+  "scope_status": "refined",
+  "actual_scope": "Independent source-bound application of Greer Guthrie PR679 support and volume obstruction to PR1779/1817 diagonal batches on the selected supplier; exact finite recipe and selector-repair checks.",
+  "scope_change_reason": "The selected record is sound within its stated checks. Live PR1779 and PR1817 explicitly leave a changed child contract open; this audits that precise inherited RecipesExact boundary rather than repeating known owner/certificate audits. Final local overlap found the existing PR679 theorem; retain full credit and publish an independent corroboration/handoff, with no duplicate theorem PR.",
+  "bottleneck_link": "The binding complex profile is dominated by small children. A rank-shape screen has meaning only when the priced child implements the direct-sum operation on independent dirty inputs.",
+  "budget_minutes": 60,
+  "stop_rule": "Prove or falsify the one-child monomial-adapter implication, bind it to the eight original selected batches, produce exact witnesses and meaningful controls, then verify and hand off; no general synthesis or supplier adoption.",
+  "outcome": "completed",
+  "evidence": "CERTIFICATE.json; verify.py exact forward columns; oracle.py reverse-incidence and rational matrix controls; test_contract.py corruption and relocation controls.",
+  "author": "Ross Richardson, with substantial OpenAI Codex assistance",
+  "ai_assistance": "Substantial OpenAI Codex assistance in source inspection, proofs, implementation, tests and writing; no subagents or independent human review.",
+  "open_questions": [
+    {
+      "question": "Can a changed interface or cost model improve the direct-sum budget?",
+      "why_it_matters": "The monomial route and volume-weighted selector bound are already excluded in scope by PR679.",
+      "first_step": "Name the hypothesis changed; give two exact source-bound recipes and a full gather/child/decode/restoration invoice and coverage law.",
+      "blocked_by": "No replacement with a better full budget has been supplied."
+    },
+    {
+      "question": "Can a proved reachable encoded subspace change the contract?",
+      "why_it_matters": "The support obstruction uses arbitrary independent input coordinates.",
+      "first_step": "Prove the subspace invariant at an actual caller cut for arbitrary permitted helper inputs, then charge encoding and restoration.",
+      "blocked_by": "No such source-bound invariant is established here."
+    }
+  ],
+  "selection": {
+    "seed": "528bb90ce62325d9be045824c7e2cb8c",
+    "track": "adversarial-audit",
+    "scope_key": "dcdb0fa8e49b08a958d0",
+    "method": "Construct one semantically invalid but superficially well-formed fixture and test rejection."
+  },
+  "parameter_domain": "All k>=2 rank-one direct sums and r>=2 candidate children on a common arbitrary finite coordinate space, monomial pre/post maps, no initialized/correlated inputs. Finite source fixture k=16, h=9, eight contiguous batches in both orientations; small exact r=2..6 controls.",
+  "cost_scope": "No favorable budget claimed. Audits the semantic premise of the hypothetical -16 H1 + H16 replacement before pricing; any nonmonomial gather/decode, clean encoding, changed W/width/coverage, hosting and precision require a new full invoice.",
+  "predecessors": [
+    {
+      "pr": 679,
+      "author": "Greer Guthrie (@g-guthrie)",
+      "head": "dce137e540acd2b689281afe222cd32c0ec1f1ae",
+      "delta": "Existing support theorem, selector construction, dirty padding and volume charge; reproduced and applied to current proposals without priority claim."
+    },
+    {
+      "pr": 1779,
+      "author": "Package: Jose Manuel (@jmbarrancoml); GitHub submitter: Cinna Davis (@1337isnot1337)",
+      "head": "1e3128bf642bbaf250b7d6b9639b2bb24b98ce5e",
+      "delta": "Diagonal matrix-product premise and eight chronological batches; this audits its missing native-child implication."
+    },
+    {
+      "pr": 1817,
+      "author": "Josie Elliston",
+      "head": "ac3a759e874e8e526bc884fc2cb8eb114695b063",
+      "delta": "134 legal commutation batches; this does not repeat the census or contradict local replay."
+    },
+    {
+      "pr": 1605,
+      "author": "Arham Tahir",
+      "delta": "Hypothetical integer rank-shape price screen, not a physical construction."
+    }
+  ],
+  "result_summary": "Independent corroboration and source-bound application of PR679; no new theorem or kappa.",
+  "validation": {
+    "verified_at_utc": "2026-10-14T11:04:14.140428+00:00",
+    "python": "CPython 3.12.12",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "registered_replay": "PASS_REGISTERED_RESEARCH_PACKAGE",
+    "separate_selected_record_check": "PASS",
+    "test_groups": 4,
+    "certificate_corruptions_rejected_by_both_engines": 6,
+    "hosted_ci": "No PR requested; no hosted pass claimed",
+    "full_selected_cold_replay": "not run; no selected supplier changed",
+    "predecessor_PR679_replay": "PASS_SELECTOR_BATCHING_IDENTITIES_AND_VOLUME_OBSTRUCTION on CPython3.12.12, optimized"
+  },
+  "publication_decision": "Publish the reproducible audit on the fork and the live Discussion1596 handoff. No new PR: the support/volume theorem already exists in merged PR679."
+}

@@ -1,0 +1,111 @@
+{
+  "sources": [
+    {
+      "pr": 1779,
+      "head": "1e3128bf642bbaf250b7d6b9639b2bb24b98ce5e",
+      "author": "Jose Manuel (@jmbarrancoml), as credited by README/TASK",
+      "path": "research/complex-diagonal-child-batches-seed95da/README.md",
+      "git_blob": "f9e55c281213a3086f797e7cd0220ec2d951b727",
+      "sha256": "81350b116c7231ed522fa597f9efc67ffc5eb3df96b77adc1c4d3b781cc05fd5",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/blob/1e3128bf642bbaf250b7d6b9639b2bb24b98ce5e/research/complex-diagonal-child-batches-seed95da/README.md",
+      "github_submitter": "Cinna Davis (@1337isnot1337)"
+    },
+    {
+      "pr": 1779,
+      "head": "1e3128bf642bbaf250b7d6b9639b2bb24b98ce5e",
+      "author": "Jose Manuel (@jmbarrancoml), as credited by README/TASK",
+      "path": "research/complex-diagonal-child-batches-seed95da/verify.py",
+      "git_blob": "f40f184b6ff903595c5440a75572ba1c5c78d5a7",
+      "sha256": "81023374d898ceb1a7462b891d7785535f0a4b594eb27ad293100d585c495541",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/blob/1e3128bf642bbaf250b7d6b9639b2bb24b98ce5e/research/complex-diagonal-child-batches-seed95da/verify.py",
+      "github_submitter": "Cinna Davis (@1337isnot1337)"
+    },
+    {
+      "pr": 1817,
+      "head": "ac3a759e874e8e526bc884fc2cb8eb114695b063",
+      "author": "Josie Elliston",
+      "path": "research/diagonal-batch-commutation/README.md",
+      "git_blob": "f5e00678bdbe42a52229d2243392c52fae79bf17",
+      "sha256": "1d62404d271b93db056ca4104436cec239bb64f32197b5c7a8c96cea68ab0083",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/blob/ac3a759e874e8e526bc884fc2cb8eb114695b063/research/diagonal-batch-commutation/README.md"
+    }
+  ],
+  "claim_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1596#discussioncomment-18922195",
+  "overlap_at_entry": {
+    "searched_at": "2026-10-14T10:50:57.238707+00:00",
+    "terms": [
+      "diagonal",
+      "direct sum",
+      "direct-sum",
+      "tensor product"
+    ],
+    "coverage": {
+      "open_prs": {
+        "fetched_at": "2026-10-14T10:48:46.360578+00:00",
+        "complete_pagination": true,
+        "records": 480
+      },
+      "discussions": {
+        "fetched_at": "2026-10-14T10:50:28.108567+00:00",
+        "complete_pagination": true,
+        "records": 456
+      }
+    },
+    "local_records": 871,
+    "warnings": [],
+    "matches_total": 195,
+    "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission."
+  },
+  "nearest_related": [
+    {
+      "pr": 1735,
+      "distinction": "Certificate/replay binding; distinct, not repeated."
+    },
+    {
+      "pr": 1312,
+      "distinction": "Owner pending-axis coverage; distinct, not repeated."
+    },
+    {
+      "pr": 1781,
+      "distinction": "All selected Clifford recipe equalities; not repeated.",
+      "head": "dafbaadeb423b3bc80fbf6fcd6f415400dc0ffbf"
+    },
+    {
+      "pr": 1814,
+      "distinction": "Hypothetical C3 gather price screen; no physical child claimed."
+    }
+  ],
+  "credited_existing_theorem": {
+    "pr": 679,
+    "author": "Greer Guthrie (@g-guthrie)",
+    "head": "dce137e540acd2b689281afe222cd32c0ec1f1ae",
+    "readme": "research/selector-batching/README.md",
+    "disposition": "incorporated in local reviewed ledger; existing support/selector/volume theorem"
+  },
+  "overlap_before_publication": {
+    "searched_at": "2026-10-14T11:04:33.619138+00:00",
+    "terms": [
+      "diagonal batch",
+      "rank-16 child",
+      "row support",
+      "direct-sum"
+    ],
+    "coverage": {
+      "open_prs": {
+        "fetched_at": "2026-10-14T11:02:44.954190+00:00",
+        "complete_pagination": true,
+        "records": 486
+      },
+      "discussions": {
+        "fetched_at": "2026-10-14T11:04:33.534988+00:00",
+        "complete_pagination": true,
+        "records": 465
+      }
+    },
+    "local_records": 873,
+    "warnings": [],
+    "matches_total": 37,
+    "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission."
+  },
+  "overlap_decision": "PR679 already proves the general obstruction; post a source-bound corroboration and handoff with a fork artifact, no duplicate theorem PR."
+}

@@ -1,0 +1,528 @@
+{
+  "status": "PASS_DIAGONAL_CHILD_CONTRACT_AUDIT",
+  "no_new_kappa": true,
+  "source": {
+    "rank_one_counts": {
+      "forward": 2412,
+      "backward": 2412
+    },
+    "batches": [
+      {
+        "orientation": "forward",
+        "first_event": 17006,
+        "last_event": 17021,
+        "registers": [
+          456,
+          457,
+          458,
+          459,
+          460,
+          461,
+          462,
+          463,
+          464,
+          465,
+          466,
+          467,
+          468,
+          469,
+          470,
+          471
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17106,
+        "last_event": 17121,
+        "registers": [
+          592,
+          593,
+          594,
+          595,
+          596,
+          597,
+          598,
+          599,
+          600,
+          601,
+          602,
+          603,
+          604,
+          605,
+          606,
+          607
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17122,
+        "last_event": 17137,
+        "registers": [
+          608,
+          609,
+          610,
+          611,
+          612,
+          613,
+          614,
+          615,
+          616,
+          617,
+          618,
+          619,
+          620,
+          621,
+          622,
+          623
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17138,
+        "last_event": 17153,
+        "registers": [
+          624,
+          625,
+          626,
+          627,
+          628,
+          629,
+          630,
+          631,
+          632,
+          633,
+          634,
+          635,
+          636,
+          637,
+          638,
+          639
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17154,
+        "last_event": 17169,
+        "registers": [
+          640,
+          641,
+          642,
+          643,
+          644,
+          645,
+          646,
+          647,
+          648,
+          649,
+          650,
+          651,
+          652,
+          653,
+          654,
+          655
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17170,
+        "last_event": 17185,
+        "registers": [
+          656,
+          657,
+          658,
+          659,
+          660,
+          661,
+          662,
+          663,
+          664,
+          665,
+          666,
+          667,
+          668,
+          669,
+          670,
+          671
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17186,
+        "last_event": 17201,
+        "registers": [
+          672,
+          673,
+          674,
+          675,
+          676,
+          677,
+          678,
+          679,
+          680,
+          681,
+          682,
+          683,
+          684,
+          685,
+          686,
+          687
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "forward",
+        "first_event": 17202,
+        "last_event": 17217,
+        "registers": [
+          688,
+          689,
+          690,
+          691,
+          692,
+          693,
+          694,
+          695,
+          696,
+          697,
+          698,
+          699,
+          700,
+          701,
+          702,
+          703
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17006,
+        "last_event": 17021,
+        "registers": [
+          456,
+          457,
+          458,
+          459,
+          460,
+          461,
+          462,
+          463,
+          464,
+          465,
+          466,
+          467,
+          468,
+          469,
+          470,
+          471
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17106,
+        "last_event": 17121,
+        "registers": [
+          592,
+          593,
+          594,
+          595,
+          596,
+          597,
+          598,
+          599,
+          600,
+          601,
+          602,
+          603,
+          604,
+          605,
+          606,
+          607
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17122,
+        "last_event": 17137,
+        "registers": [
+          608,
+          609,
+          610,
+          611,
+          612,
+          613,
+          614,
+          615,
+          616,
+          617,
+          618,
+          619,
+          620,
+          621,
+          622,
+          623
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17138,
+        "last_event": 17153,
+        "registers": [
+          624,
+          625,
+          626,
+          627,
+          628,
+          629,
+          630,
+          631,
+          632,
+          633,
+          634,
+          635,
+          636,
+          637,
+          638,
+          639
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17154,
+        "last_event": 17169,
+        "registers": [
+          640,
+          641,
+          642,
+          643,
+          644,
+          645,
+          646,
+          647,
+          648,
+          649,
+          650,
+          651,
+          652,
+          653,
+          654,
+          655
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17170,
+        "last_event": 17185,
+        "registers": [
+          656,
+          657,
+          658,
+          659,
+          660,
+          661,
+          662,
+          663,
+          664,
+          665,
+          666,
+          667,
+          668,
+          669,
+          670,
+          671
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17186,
+        "last_event": 17201,
+        "registers": [
+          672,
+          673,
+          674,
+          675,
+          676,
+          677,
+          678,
+          679,
+          680,
+          681,
+          682,
+          683,
+          684,
+          685,
+          686,
+          687
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      },
+      {
+        "orientation": "backward",
+        "first_event": 17202,
+        "last_event": 17217,
+        "registers": [
+          688,
+          689,
+          690,
+          691,
+          692,
+          693,
+          694,
+          695,
+          696,
+          697,
+          698,
+          699,
+          700,
+          701,
+          702,
+          703
+        ],
+        "row_support": {
+          "2": 8192
+        }
+      }
+    ],
+    "unique_recipes": 64,
+    "exact_recipe_columns": 32768,
+    "first_selected_column": {
+      "register": 456,
+      "event": 17006,
+      "old": 855,
+      "new": 1,
+      "input_coordinate": 0,
+      "denominator": 2,
+      "output": [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          504,
+          -1,
+          -1
+        ]
+      ]
+    }
+  },
+  "controls": {
+    "minimal_counterexample": {
+      "dimension": 4,
+      "denominator": 4,
+      "input": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "direct_sum": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "rank_two_child": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    },
+    "all_ones_blind_control": true,
+    "tensor_dimensions_checked": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "credited_pr679_selector_repair": {
+      "lanes": 16,
+      "active_rank": 1,
+      "joined_rank": 5,
+      "inverse_selector_rank": 4,
+      "complete_matrix_entries": 1024
+    }
+  },
+  "obstruction": {
+    "original_batch_dimension": 8192,
+    "minimum_rank16_dimension": 65536,
+    "batch_row_support": 2,
+    "rank16_row_support": 65536,
+    "padded_target_row_support": {
+      "1": 57344,
+      "2": 8192
+    },
+    "padded_candidate_row_support": {
+      "65536": 65536
+    },
+    "quantified_scope": "One C_r child, r>=2, with arbitrary invertible monomial pre/post maps; independent arbitrary inputs including dirty spectators."
+  }
+}

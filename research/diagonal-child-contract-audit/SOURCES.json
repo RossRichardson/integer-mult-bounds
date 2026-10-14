@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "base_commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+  "files": [
+    {
+      "path": "certificates/selected-result.json",
+      "usage": "provenance",
+      "git_blob": "ae6a99f28aa468649eb66a361e764d769363bf11",
+      "sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "path": "docs/research/agent-task-catalog.json",
+      "usage": "provenance",
+      "git_blob": "06c96f5579bb67ed1b86d334e78fbed7da6945f1",
+      "sha256": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075"
+    },
+    {
+      "path": "research/community-frontier1094-audit/selected-replay.tar.gz",
+      "usage": "input",
+      "git_blob": "c24daf067f9c543421d89ca2eeaa4eb78a57fb6f",
+      "sha256": "f1da80610bf33c58527f18ad63b4350d0b864e1d4486141ee17ac9bed4d529d6"
+    },
+    {
+      "path": "research/complex-k492-owner-repair/vendor/multicold/vendor/pr558/vendor/pr552/complex-global/vendor531/vendor/clifford/clifford_exact.py",
+      "usage": "input",
+      "git_blob": "166841a037f069249f6f7f6dedb89248812f59e2",
+      "sha256": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+    },
+    {
+      "path": "research/e8-lemma-g-lean/LemmaG/Stream.lean",
+      "usage": "input",
+      "git_blob": "e89897190307a6f3fcfb858f8de00cc5a7f49b3e",
+      "sha256": "7138f4b859d0574a803e99401f05ef5e0ec9eeac0eb480775cd9b86595c365f8"
+    },
+    {
+      "path": "research/e8-lemma-g-lean/PROOF.md",
+      "usage": "input",
+      "git_blob": "6b24da0ab861902a6a3f65d9599bb9c0f964aa1c",
+      "sha256": "2a7d84a83d34495dcf46ff9241ee3d7ec18ffc7d49c5476ab15fe0834046f2a3"
+    },
+    {
+      "path": "research/selector-batching/README.md",
+      "usage": "input",
+      "git_blob": "167f5ca029190e92c4a84423c22bbe15a8534031",
+      "sha256": "e50bae87f9bfa2dee515468aeb56d47676410ca3adfdf0e83d11bf0e31fadf2d"
+    },
+    {
+      "path": "research/selector-batching/NOTICE.md",
+      "usage": "input",
+      "git_blob": "8b3f01295035bd3f37a2f87adc026be472aabbd9",
+      "sha256": "612415d55187195cf00643c6b5684f1e135a4386680d2e8e71db0c11f688249c"
+    },
+    {
+      "path": "research/selector-batching/CERTIFICATE.json",
+      "usage": "input",
+      "git_blob": "a9fcc64792bd25d5b34fbcdecc2e1d47e9da4035",
+      "sha256": "a4d19873fc6950eb7f0e38e3439420b281e0ae4f627a2c4c556c215e68dce5e3"
+    }
+  ]
+}
