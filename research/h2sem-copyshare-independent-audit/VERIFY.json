@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/e8-bit-p111-tuned/code/xcheck_p.py",
+    "research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz",
+    "research/r439-copy-path-sharing-barrier/verify.py",
+    "research/r439-semantic-d-contract-seed10/PROOF.md"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/audit.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Code-separated incidence reconstruction, 661 dirty columns per word/direction, D cut, exact positive guards, frame and COPY profile; four semantic controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/reproduce_controls.py"
+      ],
+      "timeout_seconds": 600,
+      "checks": "Exact upstream positive replay; missing negative probe passes upstream normal/optimized/package tests; missing certificate regenerates; proposed repair positive and failure controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_package.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Optimized read-only relocation, changed/typed/missing receipt, actual source byte and missing source inventory controls."
+    }
+  ]
+}

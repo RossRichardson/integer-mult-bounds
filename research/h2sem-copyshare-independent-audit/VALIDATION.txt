@@ -1,0 +1,7 @@
+CHECK Code-separated incidence reconstruction, 661 dirty columns per word/direction, D cut, exact positive guards, frame and COPY profile; four semantic controls.
+PASS_COPYSHARE_INDEPENDENT_AUDIT columns=661 words=3 directions=2 controls=4 no_new_kappa
+CHECK Exact upstream positive replay; missing negative probe passes upstream normal/optimized/package tests; missing certificate regenerates; proposed repair positive and failure controls.
+PASS_COPYSHARE_CONTROL_AUDIT original_gaps=2 repaired_checks=4 no_mathematical_counterexample
+CHECK Optimized read-only relocation, changed/typed/missing receipt, actual source byte and missing source inventory controls.
+PASS_COPYSHARE_AUDIT_PACKAGE_CONTROLS optimized_readonly_relocation=1 corruptions=5
+PASS_REGISTERED_RESEARCH_PACKAGE research/h2sem-copyshare-independent-audit outcome=completed

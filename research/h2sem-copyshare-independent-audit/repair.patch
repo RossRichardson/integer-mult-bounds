@@ -1,0 +1,51 @@
+--- a/research/h2sem-copyshare-priced/verify.py
++++ b/research/h2sem-copyshare-priced/verify.py
+@@ -6,6 +6,7 @@
+ """
+ from __future__ import annotations
+ 
++import argparse
+ import copy
+ import gzip
+ import hashlib
+@@ -299,9 +300,11 @@
+     del drop["D"][-1]
+     try:
+         semantic_n(drop["D"], word["v"], word["R"])
++    except ValueError as exc:
++        need("helper restoration" in str(exc), "unexpected partial-matching failure: " + str(exc))
++        rejected.append("partial_matching_unrestored")
++    else:
+         raise ValueError("partial matching unrestored accepted")
+-    except ValueError:
+-        rejected.append("partial_matching_unrestored")
+ 
+     # Mutate a body gate destination: changes N.
+     mutated = copy.deepcopy(single)
+@@ -336,6 +339,11 @@
+ 
+ 
+ def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--write", action="store_true", help="explicitly regenerate CERTIFICATE.json")
++    args = parser.parse_args()
++    need(args.write or (HERE / "CERTIFICATE.json").is_file(),
++         "missing certificate; use --write only for intentional regeneration")
+     check_pins()
+     word = load_word()
+     mod = load_checker()
+@@ -441,11 +449,11 @@
+         "new_kappa": False,
+     }
+     certificate = HERE / "CERTIFICATE.json"
+-    if certificate.exists():
++    if args.write:
++        certificate.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
++    else:
+         need(report == json.loads(certificate.read_text(encoding="utf-8")),
+              "certificate mismatch")
+-    else:
+-        certificate.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+ 
+     print(
+         "PASS_H2SEM_COPYSHARE_PRICED "

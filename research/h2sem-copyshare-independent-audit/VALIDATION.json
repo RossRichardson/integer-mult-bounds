@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-10-14T11:49:55.772477+00:00",
+  "environment": {
+    "python": "CPython 3.12.12; Clang 17.0.0 clang-1700.6.3.2",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+  },
+  "base": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+  "audited_pr1805_head": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+  "registered_command": "python3.12 -I -B scripts/research_package.py --package research/h2sem-copyshare-independent-audit",
+  "registered_replay": "PASS",
+  "validation_log_sha256": "1503552bc48faee53de6ac6937dcd43bce750b717d69a98543f62ba84992a887",
+  "other_checks": [
+    "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+    "PASS_R439_BSECTION_STARS",
+    "PASS_PACKAGE_METADATA_AND_PINS",
+    "PASS selected record, exact kappa, original source inventory and proof supplement",
+    "PASS_EXACT_REPAIR_PATCH_APPLY"
+  ],
+  "unrun": [
+    "Full selected cold replay",
+    "Native C++/Boost and physical hosting",
+    "All-size compiler and precision/tape/recovery obligations",
+    "Outer analytic transfer",
+    "Hosted CI",
+    "Lean and independent human review"
+  ],
+  "publication": "Fork artifact and findings handoff only; no new contribution PR, merge, closure or selected-frontier change."
+}

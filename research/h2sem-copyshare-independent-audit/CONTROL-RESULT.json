@@ -1,0 +1,14 @@
+{
+  "predecessor_head": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+  "checks": [
+    "original positive replay passes",
+    "omitted two-pair probe passes normal optimized and all original package tests",
+    "original default replay recreates missing certificate and passes",
+    "repair passes unchanged numerical certificate",
+    "repair rejects omitted probe normally and under optimization",
+    "repair rejects missing certificate without writing",
+    "explicit write recreates identical certificate"
+  ],
+  "mathematics_refuted": false,
+  "repair_applied_upstream": false
+}

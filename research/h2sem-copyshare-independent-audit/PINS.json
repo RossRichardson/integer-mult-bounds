@@ -1,0 +1,67 @@
+{
+  "files": [
+    {
+      "path": "inputs/pr1805/verify.py",
+      "source_path": "research/h2sem-copyshare-priced/verify.py",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "e777965a2a379c48b9ee1ec3dc4d3c352930a9d7",
+      "sha256": "c85e24409bab6e9569666231babb5d7bd2af462a2d733da1c509646778c1ad95"
+    },
+    {
+      "path": "inputs/pr1805/README.md",
+      "source_path": "research/h2sem-copyshare-priced/README.md",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "1566f074cc0a6a4422157fc34f6ed88d30deb7de",
+      "sha256": "51fe03ad2636f9eb711ac681a4af006758409cd43f256ac8241e2c16bb2d5535"
+    },
+    {
+      "path": "inputs/pr1805/CERTIFICATE.json",
+      "source_path": "research/h2sem-copyshare-priced/CERTIFICATE.json",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "8a43123fff7fb0d1a85d6281de54428c66aa45b5",
+      "sha256": "a30148091a6377936e6779e07ba391c8ecbdb32102ef7ec2d9fa33dc064767b2"
+    },
+    {
+      "path": "inputs/pr1805/SOURCES.json",
+      "source_path": "research/h2sem-copyshare-priced/SOURCES.json",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "f11faac8ae68b1f9b0c9b8ce841c29a10e90d5d8",
+      "sha256": "aae20d308e8d45d5062dc191dc7d5182411914cc0fcdde9613b5c8031838cef7"
+    },
+    {
+      "path": "inputs/pr1805/VERIFY.json",
+      "source_path": "research/h2sem-copyshare-priced/VERIFY.json",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "52ee133979cc6172ebc298329059d711ec699b62",
+      "sha256": "e175d61e6d60a7e33f1f75f102ab38f6179c4a188ff48f67d3ef683ba7c4617d"
+    },
+    {
+      "path": "inputs/pr1805/TASK.json",
+      "source_path": "research/h2sem-copyshare-priced/TASK.json",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "ac6a46aba54dcb78fc7a46c9a26a156f935e0662",
+      "sha256": "1bf8a02829a0ad913e6e0d4b8a57bad62cfd6b0b4702a60401771fb5d62fd108"
+    },
+    {
+      "path": "inputs/context/selected-result.json",
+      "source_path": "certificates/selected-result.json",
+      "commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+      "git_blob": "ae6a99f28aa468649eb66a361e764d769363bf11",
+      "sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "path": "inputs/context/agent-task-catalog.json",
+      "source_path": "docs/research/agent-task-catalog.json",
+      "commit": "0b1cccf86e2f5132ed286a26ef0a681a495740ea",
+      "git_blob": "06c96f5579bb67ed1b86d334e78fbed7da6945f1",
+      "sha256": "6686ad58f1fbdbc87134a78901b60fd53a20d3984355e91defbbebc9e9fa8075"
+    },
+    {
+      "path": "inputs/pr1805/test_package.py",
+      "source_path": "research/h2sem-copyshare-priced/test_package.py",
+      "commit": "b34e0620bd92af49c9095e0eeb885f601fffd137",
+      "git_blob": "4c3759b32b3807a23b6b40ed1d2b3084d1ca5584",
+      "sha256": "9bfcacfb1d33a9e5e4fb914d4a0d76a6ed4e29c4983eb74d6c115f8fcac56357"
+    }
+  ]
+}
