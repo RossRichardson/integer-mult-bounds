@@ -1,0 +1,37 @@
+{
+  "status": "PASS scoped applicability review and retained replay",
+  "checked_at_utc": "2026-10-15T09:12:53.919216+00:00",
+  "base": "0fdd7d82de03e43c9e5a1000dfbcd380d1b687d2",
+  "scope": "Written all-parameter geometry and conditional invoice; reused finite evidence freshly replayed. No new theorem or kappa.",
+  "checks": [
+    {
+      "command": "python3.12 -I -O -B research/synthetic-layout-independent/verify.py",
+      "output": "PASS_SYNTHETIC_LAYOUT: 9486 layouts; 200434 complete addresses; 4340 ring columns; 1244 extra scalar columns; 11 negative controls"
+    },
+    {
+      "command": "python3.12 -I -O -B research/synthetic-layout-independent/test_verify.py",
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 35.477s\n\nOK"
+    },
+    {
+      "command": "python3 -B scripts/verify_selected_result.py",
+      "output": "PASS selected record, exact kappa, original source inventory and proof supplement: 836330098538459/500000000000000000"
+    }
+  ],
+  "retained_cartesian_rounds": 93868,
+  "source_binding": {
+    "PR2298_PROOF_sha256": "4afeb1708cf9568a9cd25afc72b159d5b06d151a6a6aba567a50970b38a1f513",
+    "PR2298_checks_sha256": "2a522b930dd131919f7078fa54dd8c3043173ce8780f3ec519801b7d71d825d8",
+    "PR2298_SOURCES_sha256": "ea676705e2c79a49fe8f4b4f551b9d1e8027409cc6b6c84a78c049bb98ac10c3",
+    "source06_and_physical_model_match_PR2298_pins": true
+  },
+  "independent_specialist": "complete_field_audit / math-recursive-interfaces: direct coordinate argument, full-field and actual-volume invoice; no new code or finite census. Parent reviewed proof.",
+  "not_checked": [
+    "full selected cold replay",
+    "full recursive interchange/layer proofs",
+    "new hosted CI",
+    "formal-kernel proof",
+    "complete fixed-tape execution",
+    "dimension extension proof",
+    "Gaussian/prime/numerical error chain"
+  ]
+}

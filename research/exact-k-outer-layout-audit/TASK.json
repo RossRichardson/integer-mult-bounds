@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "task_id": "uniform-transfer-audit",
+  "priority_revision": 4,
+  "base_commit": "0fdd7d82de03e43c9e5a1000dfbcd380d1b687d2",
+  "original_card": {
+    "id": "uniform-transfer-audit",
+    "question": "Can one exact all-size/compiler, precision, hosting or restoration implication be proved or falsified?",
+    "starting_points": [
+      "certificates/selected-result.json",
+      "docs/audit.md"
+    ],
+    "methods": [
+      "Prove one missing implication with explicit quantified hypotheses.",
+      "Find an exact counterexample at the claimed interface boundary."
+    ],
+    "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/research_baseline.py"
+      ],
+      "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+      "inspect": "Read the selected review scope and choose one exact all-size or precision implication.",
+      "scope": "Positive control / source-bound orientation only; this is not a new construction or full cold replay."
+    },
+    "first_experiment": "Write its quantified inputs and conclusion; find a missing hypothesis or construct a minimal exact adversarial instance.",
+    "bottleneck_link": "Finite supplier improvements are useful only under the retained transfer obligations.",
+    "allowed_variations": [
+      "Choose one tape, precision, hosting or restoration lemma."
+    ],
+    "scope_change_triggers": [
+      "Replacing a quantified obligation with another finite smoke test."
+    ],
+    "overlap_terms": [
+      "uniform transfer",
+      "all-size",
+      "precision"
+    ]
+  },
+  "scope_status": "refined",
+  "actual_scope": "Independent applicability review of PR2298 section3 exact-K caller into PR2287 complete-field geometry, using unchanged source06 and PR879 evidence.",
+  "scope_change_reason": "Live source inspection found the geometry theorem and comprehensive finite checker already present. No duplicate implementation is warranted; audit current caller applicability and publish a finding/handoff.",
+  "bottleneck_link": "Identifies which caller entrance and complete-volume obligations are already discharged and leaves actual callee costs/restoration explicit.",
+  "budget_minutes": 60,
+  "stop_rule": "Stop after source-bound written applicability audit, existing replay and controls, and a public scoped handoff; do not launch another research round.",
+  "outcome": "independent-verification",
+  "evidence": "REVIEW.md and EVIDENCE.json; existing PR879 replay, unchanged source pins and complete scope separation.",
+  "author": "Ross with OpenAI Codex assistance",
+  "ai_assistance": "Substantial OpenAI Codex assistance; one separately delegated recursive-interface specialist wrote REVIEW.md; no independent human review.",
+  "open_questions": [
+    {
+      "question": "Does the invoked complete-operation chain meet its physical cost, cleanup and uniformity contracts?",
+      "why_it_matters": "The correct Cartesian caller geometry does not establish either recursive callee or the multiplication theorem.",
+      "first_step": "Audit one actual composed child endpoint with adapters, spectators, scratch and parking return, keeping the full volume/tariff invoice.",
+      "blocked_by": "Pending independent review of PR2234 and the PR2287 extended layer, including their actual physical interfaces."
+    }
+  ]
+}

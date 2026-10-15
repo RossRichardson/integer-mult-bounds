@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "base_commit": "0fdd7d82de03e43c9e5a1000dfbcd380d1b687d2",
+  "files": [
+    {
+      "path": "certificates/selected-result.json",
+      "usage": "provenance",
+      "git_blob": "ae6a99f28aa468649eb66a361e764d769363bf11",
+      "sha256": "10b9e340fd8e354a37a0c4813c90e5de1dd42044b5f6aca4a3fc5a42b685fa32"
+    },
+    {
+      "path": "docs/research/agent-task-catalog.json",
+      "usage": "provenance",
+      "git_blob": "e8870e5917057d59b730eb14721a778639eca050",
+      "sha256": "d46eb6d5b3e279428753d770653663fbdf1063e55c255ea073d768f344927ef7"
+    },
+    {
+      "path": "upstream/build/sections/06-transforms.tex",
+      "usage": "input",
+      "git_blob": "de073e9292d58573f7065a3cd4f214e0d05f3444",
+      "sha256": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c"
+    },
+    {
+      "path": "upstream/build/sections/02-streams.tex",
+      "usage": "input",
+      "git_blob": "088fceea1867abc76271d7efe7532b779fee9039",
+      "sha256": "606c80db61cad13aa0c3b6060dc4b88dbbe7ac60cdd831aa93f28d908fd09dab"
+    },
+    {
+      "path": "upstream/build/sections/05-layers.tex",
+      "usage": "input",
+      "git_blob": "5ce8b3c83c455f221bb84858a97230b0285644aa",
+      "sha256": "20cfc8d12099d4e4ed9e3e7eeb6162edd9b6e0e076f24693364cd24377252594"
+    },
+    {
+      "path": "research/synthetic-layout-independent/README.md",
+      "usage": "input",
+      "git_blob": "dd36554622b72cfed6277064f51bf0d3f37c5def",
+      "sha256": "b5bcf3be4f4956267af1d013baa9cc64408a13c0a69458ccd3da796f47420bff"
+    },
+    {
+      "path": "research/synthetic-layout-independent/physical.py",
+      "usage": "input",
+      "git_blob": "4f6fc592d11f95e0a846086960cb067e14c1ea57",
+      "sha256": "d8fe72778ce30b78f2b345c87ccc939864f58f5c09a57d74688e8f52d133cb89"
+    },
+    {
+      "path": "research/synthetic-layout-independent/reference.py",
+      "usage": "input",
+      "git_blob": "5f978f539fe83bcc618c44ca20cbe8f8294fa322",
+      "sha256": "6f4b8304c77d8fcfc38b709682b5757bea5968f0f027de3af220af4f2f90b403"
+    },
+    {
+      "path": "research/synthetic-layout-independent/verify.py",
+      "usage": "input",
+      "git_blob": "16ec767dc30f06b33ab75d8851adff41a7468272",
+      "sha256": "6c911915bed41b1229a7af9e8400ba4c7878d1fb92eac5b29624e87e7d16b490"
+    },
+    {
+      "path": "research/synthetic-layout-independent/test_verify.py",
+      "usage": "input",
+      "git_blob": "be9c9d51fe61af1ba09f377fd8df7a0437d5dfc4",
+      "sha256": "5cc5f99c442618f29d730d729b2837a156e1822925ae36f5b6928acf36107523"
+    },
+    {
+      "path": "research/synthetic-layout-independent/EXPECTED.json",
+      "usage": "input",
+      "git_blob": "209f755a408aa94f36b5159e2d7e0e8d3dfa8412",
+      "sha256": "ba98dace20f76a2d1749119f28ecc2ac3304fb9fb8e1ac8db0a60eab6cd586dd"
+    },
+    {
+      "path": "research/synthetic-layout-independent/DOMAIN.json",
+      "usage": "input",
+      "git_blob": "8d816f40a280349f9283bbd16c9d9b974032bc23",
+      "sha256": "b5b442e4f96c0557838853177bceea417dde3b3cdd5cb5cc15530a0659d617ee"
+    },
+    {
+      "path": "research/synthetic-layout-independent/SOURCES.json",
+      "usage": "input",
+      "git_blob": "92824c00b5d2330507a2bacfe54a11709d061e60",
+      "sha256": "d038d686c1cdfcaa5b7825f6a7e1d6392127dd68d34b1f27eeb0d033a1d650d2"
+    }
+  ],
+  "proof_dependencies": [
+    {
+      "pr": 2298,
+      "head": "8507498d363735ced0b0a3f02d5ecf80ed3e3805",
+      "path": "research/selected-conservative-outer/PROOF.md",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/blob/8507498d363735ced0b0a3f02d5ecf80ed3e3805/research/selected-conservative-outer/PROOF.md",
+      "git_blob": "f26af67ae1ee4d9886d4e4b28d5332994f492bc2",
+      "sha256": "4afeb1708cf9568a9cd25afc72b159d5b06d151a6a6aba567a50970b38a1f513",
+      "storage": "Fetched exact proof retained in local run evidence; public immutable URL supplied."
+    },
+    {
+      "pr": 2287,
+      "head": "8c60765b5dea9d862b3b190d55da102a576031bf",
+      "path": "research/selected-complex-layer-closure/PROOF.md",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/blob/8c60765b5dea9d862b3b190d55da102a576031bf/research/selected-complex-layer-closure/PROOF.md",
+      "git_blob": "d7ec0d101405a5f099f55f6a73e9791731737fd0",
+      "sha256": "43feda0342c07a9429699c3a44e8936a3f3fb57ce9b32f38ff3dc06ac887b265",
+      "storage": "Fetched exact proof retained in local run evidence; public immutable URL supplied."
+    },
+    {
+      "pr": 2234,
+      "head": "d047ef86fbc5b1614d3d8e2b8d3441413beab73f",
+      "path": "research/selected-bit-recursive-closure/PROOF.md",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/blob/d047ef86fbc5b1614d3d8e2b8d3441413beab73f/research/selected-bit-recursive-closure/PROOF.md",
+      "git_blob": "6c410cab5713979214a45835091fbeb9ee9b8531",
+      "sha256": "74cc8de20f21acb5123fe2d20996fe0925ea6e51b3dec633bd5221fb719b3344",
+      "storage": "Fetched exact proof retained in local run evidence; public immutable URL supplied."
+    }
+  ],
+  "predecessor": {
+    "pr": 879,
+    "head": "12012c9478d121d6d404a0d94e446016e3f51a2e",
+    "author": "Philipp (@mightyOil)",
+    "credit": "Original independent finite layout/transform implementation; no code imported or modified by this review."
+  }
+}
