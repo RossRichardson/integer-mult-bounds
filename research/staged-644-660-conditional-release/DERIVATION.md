@@ -1,7 +1,7 @@
 # Conditional transfer for the staged 644/660 supplier
 
 The original full strict release and separate source/native/owner/physical/prefix/outer
-binding pass; see evidence/RELEASE-RECEIPT.json and evidence/FINAL-BINDING.json.
+binding pass at the predecessor endpoint; see evidence/RELEASE-RECEIPT.json and evidence/FINAL-BINDING.json. This continuation fixes that construction and invoice and adds a fresh exact 60-digit moment/outer refinement. The full replay receipt and exact positive gain are in evidence/PRECISION-60-REFINEMENT.json.
 
 The historical model is PR3133's native complex supplier composed with PR3148's
 T740 owner geometry and PR3531's modern outer transfer. The native complex
@@ -43,24 +43,29 @@ M(b) = (1/(73*663040)) * sum_r r*H[r]*(73/r)^b.
 
 Every occupied rank lies strictly between zero and 73, so each summand is
 strictly increasing in `b`. Independent outward rational log/exp arithmetic
-locates adjacent endpoints
+the predecessor engines locate the 24-digit bracket; the certified refinement
+uses adjacent endpoints
 
 ```
-C = 0.001730006549538841847005
-D = 0.001730006549538841847006.
+C = 0.001730006549538841847005854305451473616183688862135324240199
+D = 0.001730006549538841847005854305451473616183688862135324240200.
 ```
 
-The PR3531 positive-binomial engine and both retained moment implementations
-independently certify `upper M(C)<1<lower M(D)`. Added unpaid rank-one and
-rank-48 children are rejected. The full rational interval values are retained
-in the fresh `arithmetic/RESULT.json` emitted by `check_owners_and_moment.py`; a separate AI review of the canonical root engine independently
-agrees. This is an exact interval result, without floating-point sign decisions.
+The vendored PR3531 positive-binomial engine certifies `upper M(C)<1<lower
+M(D)` at 60 decimal digits. Both retained moment implementations independently
+recheck the predecessor 24-digit bracket because their fixed precision cannot
+distinguish adjacent 60-digit endpoints. Added unpaid rank-one and rank-48
+children are rejected. The complete rational intervals, all three engine
+hashes, the fresh profile and the outer ledger are recorded in
+`evidence/PRECISION-60-REFINEMENT.json` and emitted by
+`check_owners_and_moment.py`. All sign decisions use exact integer/rational
+arithmetic or certified outward bounds.
 
-At endpoint precision 24, the unchanged modern outer construction gives
+For endpoint precision 60, the unchanged modern outer construction gives
 
 ```
-K = C - 10^(-46) - 10^(-70)
-  = 0.0017300065495388418470049999999999999999999998999999999999999999999999
+K = C - 10^(-82) - 10^(-106)
+  = 0.0017300065495388418470058543054514736161836888621353242401989999999999999999999998999999999999999999999999
   > 0.00173.
 ```
 
@@ -115,14 +120,14 @@ whole-call hosting, internal recursive rounding precision, tape complexity,
 exact recovery, analytic transfer or BIT H1-H5. No formal-kernel proof or
 maintainer-selected frontier update is asserted.
 
-At endpoint precision 24, the explicit modern parameters are
-`r0=10^-104`, `delta=(1025/1024)r0`, `epsilon=1-delta`,
-`beta=1-3delta`, `b=C-r0`, and `q=C-2r0`. Since
-`0<C-epsilon*q<10^-70` and `C*10^70` is integral, the prescribed floor gives
-`floor(10^70*epsilon*q)/10^70=C-10^-70`. Subtracting `10^-46` gives K above.
-The older balanced bootstrap value is not substituted for this modern K. The
-transfer uses fine-prime padding, gauge-free interiors, the explicit Strassen
-boundary and union schedule, with their credited analytic premises.
+The 60-digit outer refinement sets `endpoint_digits=60` and regenerates the
+modern SPEC, B interval, strict ledger and independent ledger from the fresh
+profile. The exact resulting rational K is compared directly with the
+independently constructed value above; the strict checks and all rejection
+controls pass. The older balanced bootstrap value is not substituted for this
+modern K. The transfer uses fine-prime padding, gauge-free interiors, the
+explicit Strassen boundary and union schedule, with their credited analytic
+premises.
 
 A completed local call is a same-replica data shear together with whole-family
 unitary helper residuals; helper actions need not be physical identity. The
@@ -147,6 +152,7 @@ result, formal-kernel proof or maintainer-selected frontier change follows.
 The retained source CLAIM and outer OUTER-CLAIM files are historical templates.
 In particular, the immutable outer branch prose still mentions precision 3000
 and gaps at 3080 digits. That prose does not describe this new endpoint. The
-generated SPEC with endpoint_digits=24, numeric fixed_grid_maximum, retuned
-slacks, fresh LEDGER and independently derived arithmetic are authoritative.
+predecessor SPEC with endpoint_digits=24 and its original release receipt are
+preserved. The new numeric SPEC with endpoint_digits=60, fresh LEDGER and
+independently derived arithmetic are authoritative for the refined endpoint.
 No source manifest is altered merely to modernize that historical prose.

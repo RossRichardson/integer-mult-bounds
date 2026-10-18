@@ -80,8 +80,10 @@ def main():
  run('fresh-independent-owner-moment-outer',py+[P/'check_owners_and_moment.py','--repo',repo,'--word-package',pair,'--out',work/'independent'])
  arithmetic=read(work/'independent/RESULT.json')
  from fractions import Fraction as Q
- need(Q(result['kappa'])==Q(release['kappa_decimal'])==Q(arithmetic['kappa'])>Q('0.00173'),'same exact released conditional candidate')
+ claim=read(P/'CLAIM.json')
+ need(Q(result['kappa'])==Q(release['kappa_decimal'])==Q(claim['predecessor_kappa']),'inherited complete release binds the exact predecessor endpoint')
+ need(Q(arithmetic['kappa'])==Q(claim['kappa'])==Q(claim['kappa_decimal'])>Q(release['kappa_decimal']),'fresh 60-digit arithmetic strictly refines the fully released profile')
  need(tree(old)==read(old/'MANIFEST.json') and tree(source)==read(source/'MANIFEST.json'),'read-only source closure')
- save(work/'RESULT.json',dict(status='PASS_STAGED_PAIR_COMPLETE_CONDITIONAL_REPLAY',kappa=result['kappa'],source_manifest_sha256=SOURCE,release_receipt_sha256=sha(work/'candidate/release/RELEASE-RECEIPT.json'),explicit_retained_reuse=bool(a.retained),fresh_retained_bootstrap=not bool(a.retained),stages=stages,scope='Conditional finite source/native/owner/physical/prefix/outer release. All inherited all-size theorem hypotheses remain; no formal-kernel proof.'))
+ save(work/'RESULT.json',dict(status='PASS_STAGED_PAIR_COMPLETE_CONDITIONAL_REPLAY',kappa=arithmetic['kappa'],predecessor_release_kappa=release['kappa_decimal'],source_manifest_sha256=SOURCE,release_receipt_sha256=sha(work/'candidate/release/RELEASE-RECEIPT.json'),precision_refinement_receipt_sha256=sha(P/'evidence/PRECISION-60-REFINEMENT.json'),explicit_retained_reuse=bool(a.retained),fresh_retained_bootstrap=not bool(a.retained),stages=stages,scope='Inherited full finite source/native/owner/physical/prefix release at the pinned predecessor endpoint, combined with a fresh exact 60-digit owner/moment/outer replay for the same profile. All inherited all-size theorem hypotheses remain; no formal-kernel proof.'))
  print('PASS_STAGED_PAIR_COMPLETE_CONDITIONAL_REPLAY',arithmetic['kappa_decimal'],flush=True)
 if __name__=='__main__':main()

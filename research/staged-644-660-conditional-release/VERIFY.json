@@ -118,7 +118,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Fresh exact integer primal, complete literal owner/source-window/family/chronological-prefix audit, complete H, rigorous root, all modern and bootstrap outer inequalities and scoped controls. Full local native and long cold release are separately identified."
+      "checks": "Fresh exact integer primal, complete literal owner/source-window/family/chronological-prefix audit, exact 60-digit root enclosure and strict predecessor gain, all modern/bootstrap outer inequalities, scoped controls, and refreshed package artifact hashes. Original full local native and long cold release remain separately identified."
     }
   ]
 }

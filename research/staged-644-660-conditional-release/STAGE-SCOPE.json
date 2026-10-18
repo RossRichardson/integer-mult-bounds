@@ -59,6 +59,12 @@
     "retained_policy": "Fresh retained bootstrap by default; --retained explicitly authenticates all predecessor source, receipt and cache bytes. No automatic or implicit reuse.",
     "tested_boundary": "PASS preparation-only: exact historical exports/source chain, all source rebuild controls, both fresh changed native chains, fresh owner journal and owners/parent-lift/rebind. This new wrapper full release tail was not executed."
   },
+  "precision_refinement_60": {
+    "construction_changed": false,
+    "fresh_checks": "owner profile, exact 60-digit moment enclosure, modern outer ledger and controls; see evidence/PRECISION-60-REFINEMENT.json",
+    "inherited_complete_release": "evidence/RELEASE-RECEIPT.json at the exact predecessor endpoint",
+    "scope": "Same fixed T740 source/native/physical/prefix construction and actual profile. No new all-size or formal-kernel claim."
+  },
   "schema_version": 1,
   "status": "ORIGINAL_FULL_RELEASE_BOUND"
 }

@@ -30,7 +30,10 @@ def main():
     for f,digest in read(P/'ARITHMETIC-PINS.json')['vendor'].items():need(sha(PR/f)==digest,'immutable PR3531 input '+f)
     for f,digest in read(P/'ARITHMETIC-PINS.json')['repo'].items():need(sha(REPO/f)==digest,'immutable arithmetic input '+f)
     engine=REPO/'research/rank7-joint-endframes/tools/root.py'
-    E=load(engine,'independent_rational_engine');C,D=E.kappa_from_profile(H,740,digits=24)
+    E=load(engine,'independent_rational_engine');coarse,coarse_next=E.kappa_from_profile(H,740,digits=24)
+    need(coarse==Q('0.001730006549538841847005') and coarse_next==coarse+Q(1,10**24),'pinned predecessor bracket')
+    C=Q('0.001730006549538841847005854305451473616183688862135324240199')
+    D=C+Q(1,10**60)
     need(C>Q('0.00173'),'actual owner moment exceeds threshold')
     B=load(PR/'binomial.py','positive_binomial');support=load(PR/'support.py','outer_support')
     class ClosedSourceRoot:
@@ -41,11 +44,14 @@ def main():
             return PR/name[len(prefix):] if name.startswith(prefix) else REPO/name
     support.authenticate(ClosedSourceRoot(),PR)
     checks=[]
-    for e,path in [(B,PR/'binomial.py')]+[(load(REPO/q,'retained_'+str(i)),REPO/q) for i,q in enumerate([
-        'research/rank7-joint-endframes/tools/root.py','research/two-sided-helper-extraction/tools/audit_moment.py'])]:
-        below=e.moment(H,C,896*740);above=e.moment(H,D,896*740)
-        need(below[1]<1<above[0],'strict root enclosure '+str(path))
-        checks.append(dict(engine=str(path),sha256=sha(path),below=list(map(str,below)),above=list(map(str,above))))
+    below=B.moment(H,C,896*740);above=B.moment(H,D,896*740)
+    need(below[1]<1<above[0],'exact 60-digit root enclosure')
+    checks.append(dict(engine=str(PR/'binomial.py'),sha256=sha(PR/'binomial.py'),below=list(map(str,below)),above=list(map(str,above)),scope='exact 60-digit endpoint and successor'))
+    for i,qpath in enumerate(['research/rank7-joint-endframes/tools/root.py','research/two-sided-helper-extraction/tools/audit_moment.py']):
+        path=REPO/qpath;e=load(path,'retained_'+str(i))
+        below=e.moment(H,coarse,896*740);above=e.moment(H,coarse_next,896*740)
+        need(below[1]<1<above[0],'strict predecessor root enclosure '+str(path))
+        checks.append(dict(engine=str(path),sha256=sha(path),below=list(map(str,below)),above=list(map(str,above)),scope='42/24-digit predecessor endpoint and successor'))
     for rank in [1,48]:
         bad=dict(H);bad[rank]=bad.get(rank,0)+1
         need(B.moment(bad,C,896*740)[0]>1,'unpaid actual child control')
@@ -60,10 +66,10 @@ def main():
     need(hashlib.sha256(text.encode()).hexdigest()==patch['after_sha256'],'same admitted parameterized checker')
     (target/'outer/check_ledger.py').write_text(text)
     (target/'outer/independent_check.py').write_bytes((source/'outer/independent_check.py').read_bytes())
-    K=C-Q(1,10**46)-Q(1,10**70)
-    save(target/'new/SPEC.json',dict(geometry=dict(dimension=73,replicas=740),expected=dict(complex_lower=str(C),kappa=str(Q('0.00173')),global_profile=H,live=896*740),outer_refinement=dict(endpoint_digits=24)))
+    K=C-Q(1,10**82)-Q(1,10**106)
+    save(target/'new/SPEC.json',dict(geometry=dict(dimension=73,replicas=740),expected=dict(complex_lower=str(C),kappa=str(Q('0.00173')),global_profile=H,live=896*740),outer_refinement=dict(endpoint_digits=60)))
     save(target/'CLAIM.json',dict(kappa=str(K),scope='Actual owner arithmetic only; full physical release is separate.'))
-    save(target/'outer/B.json',dict(b=str(C-Q(1,10**104)),b_above_endpoint=str(D),profile=H,live=896*740))
+    save(target/'outer/B.json',dict(b=str(C-Q(1,10**140)),b_above_endpoint=str(D),profile=H,live=896*740))
     commands=[];env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
     for script in ['check_ledger.py','independent_check.py']:
         command=[sys.executable,'-B',str(target/'outer'/script)]
