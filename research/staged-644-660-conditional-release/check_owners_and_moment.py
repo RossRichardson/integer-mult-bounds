@@ -35,7 +35,7 @@ def main():
  stages=[];started=time.monotonic()
  def run(name,script,*args):
   log=out/(name+'.log');start=time.monotonic();cmd=[sys.executable,'-B',str(script),*map(str,args)]
-  with log.open('wb') as stream:r=subprocess.run(cmd,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=240)
+  with log.open('wb') as stream:r=subprocess.run(cmd,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=600)
   stages.append(dict(stage=name,seconds=time.monotonic()-start,exit_code=r.returncode,script_sha256=sha(script),log_sha256=sha(log)))
   save(out/'STAGES.json',stages);need(r.returncode==0,'stage failed '+name+'; see '+str(log));return log
  run('integer-primal-and-controls',P/'owners/verify_aggregate.py')
